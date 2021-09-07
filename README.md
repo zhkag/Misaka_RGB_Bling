@@ -1,5 +1,7 @@
 # 御坂网络驱动-RGB Bling
 
+更多资料见：[御坂网络驱动 RGB Bling | xqyjlj](https://xqyjlj.github.io/2021/09/07/御坂网络驱动-RGB-Bling/)
+
 ## 介绍
 
 御坂网络驱动-RGB Bling 软件包提供了 RGB LED 的控制接口
