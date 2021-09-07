@@ -1,5 +1,5 @@
 /**
- * @file Misaka_RGB_Bling.c
+ * @file Misaka_rgb_bling.c
  * @brief
  * @author xqyjlj (xqyjlj@126.com)
  * @version 0.0
@@ -14,7 +14,7 @@
  * </table>
  * *********************************************************************************
  */
-#include "Misaka_RGB_Bling.h"
+#include "Misaka_rgb_bling.h"
 
 static Misaka_Bling_Struct s_misaka_bling = {0};
 

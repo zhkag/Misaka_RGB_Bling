@@ -1,5 +1,5 @@
 /**
- * @file Misaka_RGB_Bling.h
+ * @file Misaka_rgb_bling.h
  * @brief
  * @author xqyjlj (xqyjlj@126.com)
  * @version 0.0

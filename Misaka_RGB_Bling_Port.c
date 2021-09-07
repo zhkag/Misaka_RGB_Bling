@@ -1,5 +1,5 @@
 /**
- * @file Misaka_RGB_Bling_Port.c
+ * @file Misaka_rgb_bling_port.c
  * @brief
  * @author xqyjlj (xqyjlj@126.com)
  * @version 0.0
@@ -18,7 +18,7 @@
  * @brief 设置Misaka_Bling的GPIO引脚
  * @param  color            颜色
  */
-#include "Misaka_RGB_Bling.h"
+#include "Misaka_rgb_bling.h"
 
 /**
  * @brief                   设置RBG颜色引脚
