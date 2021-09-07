@@ -22,38 +22,58 @@
 
 typedef enum
 {
-    Misaka_Bling_Color_None = 0,
-    Misaka_Bling_Color_Red,
-    Misaka_Bling_Color_Green,
-    Misaka_Bling_Color_Blue,
-    Misaka_Bling_Color_Yellow,
-    Misaka_Bling_Color_Cyan,
-    Misaka_Bling_Color_White,
-    Misaka_Bling_Color_Purple,
-} Misaka_Bling_Color_Enum;
+    Misaka_RGB_Bling_Color_None = 0,
+    Misaka_RGB_Bling_Color_Red,
+    Misaka_RGB_Bling_Color_Green,
+    Misaka_RGB_Bling_Color_Blue,
+    Misaka_RGB_Bling_Color_Yellow,
+    Misaka_RGB_Bling_Color_Cyan,
+    Misaka_RGB_Bling_Color_White,
+    Misaka_RGB_Bling_Color_Purple,
+} Misaka_RGB_Bling_Color_Enum;
 
 typedef struct
 {
-    Misaka_Bling_Color_Enum color1;
-    Misaka_Bling_Color_Enum color2;
+    Misaka_RGB_Bling_Color_Enum color1;
+    Misaka_RGB_Bling_Color_Enum color2;
     uint32_t contiune_time;//闪烁持续时间
     uint32_t color1_cnt;//颜色1计数器
     uint16_t period_cnt;//颜色2计数器
     uint16_t cnt;//闪烁计数器
     uint8_t endless_flag;//无尽模式
     uint16_t time_base;//时间基数
-} Misaka_Bling_Struct;
+} Misaka_RGB_Bling_Struct;
 
-void Misaka_Set_Bling_GPIO(Misaka_Bling_Color_Enum color);
+/**
+ * @brief 设置Misaka_RGB_Bling的GPIO引脚
+ * @param  color            颜色
+ */
+void Misaka_set_bling_pin(Misaka_RGB_Bling_Color_Enum color);
 
-void Misaka_Bling_Init(uint16_t time_base);
+/**
+ * @brief Misaka_RGB_Bling初始化
+ */
+void Misaka_rgb_bling_init(uint16_t time_base);
 
-void Misaka_Bling_Mode_Set(Misaka_Bling_Color_Enum color1,
-                           Misaka_Bling_Color_Enum color2,
-                           uint32_t color1_time,
-                           uint32_t color2_time,
-                           uint16_t cnt,
-                           uint8_t endless_flag);
+/**
+ * @brief                   Misaka_RGB_Bling模式设置
+ * @param  color1           颜色1
+ * @param  color2           颜色2
+ * @param  color1_time      颜色1时间
+ * @param  color2_time      颜色2时间
+ * @param  cnt              次数
+ * @param  endless_flag     无尽模式
+ */
+void Misaka_rgb_bling_mode_set(Misaka_RGB_Bling_Color_Enum color1,
+                               Misaka_RGB_Bling_Color_Enum color2,
+                               uint32_t color1_time,
+                               uint32_t color2_time,
+                               uint16_t cnt,
+                               uint8_t endless_flag);
 
-void Misaka_Bling_Cycle_Process();
+/**
+ * @brief   周期处理函数
+ */
+void Misaka_rgb_bling_cycle_process();
+
 #endif

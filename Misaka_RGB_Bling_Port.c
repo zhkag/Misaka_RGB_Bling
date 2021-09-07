@@ -15,7 +15,7 @@
  * *********************************************************************************
  */
 /**
- * @brief 设置Misaka_Bling的GPIO引脚
+ * @brief 设置Misaka_RGB_Bling的GPIO引脚
  * @param  color            颜色
  */
 #include "Misaka_rgb_bling.h"
@@ -24,46 +24,46 @@
  * @brief                   设置RBG颜色引脚
  * @param  color            颜色
  */
-void Misaka_Set_Bling_GPIO(Misaka_Bling_Color_Enum color)
+void Misaka_set_bling_pin(Misaka_RGB_Bling_Color_Enum color)
 {
     switch (color)
     {
-    case Misaka_Bling_Color_None:
+    case Misaka_RGB_Bling_Color_None:
     {
 
     }
     break;
-    case Misaka_Bling_Color_Red:
+    case Misaka_RGB_Bling_Color_Red:
     {
 
     }
     break;
-    case Misaka_Bling_Color_Green:
+    case Misaka_RGB_Bling_Color_Green:
     {
 
     }
     break;
-    case Misaka_Bling_Color_Blue:
+    case Misaka_RGB_Bling_Color_Blue:
     {
 
     }
     break;
-    case Misaka_Bling_Color_Yellow:
+    case Misaka_RGB_Bling_Color_Yellow:
     {
 
     }
     break;
-    case Misaka_Bling_Color_Cyan:
+    case Misaka_RGB_Bling_Color_Cyan:
     {
 
     }
     break;
-    case Misaka_Bling_Color_White:
+    case Misaka_RGB_Bling_Color_White:
     {
 
     }
     break;
-    case Misaka_Bling_Color_Purple:
+    case Misaka_RGB_Bling_Color_Purple:
     {
 
     }
