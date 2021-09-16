@@ -21,6 +21,7 @@
  */
 #include "Misaka_rgb_bling.h"
 #include <rtthread.h>
+#include <drv_common.h>
 #include <rtdevice.h>
 
 #ifndef RGB_R
